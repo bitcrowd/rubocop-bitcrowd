@@ -45,15 +45,9 @@ fixable Cop into a single commit when initially adding rubocop into a bigger pro
 This gem provides a simple script, that can help you with this task:
 
 1. Create your rubocop configuration (either with the instructions above or your own)
-2. Create a rubocop_todo.yml with:
-```
-rubocop --auto-gen-config
-```
+2. Create a rubocop_todo.yml with: `rubocop --auto-gen-config`
 3. Make sure you have a clean state in git, since the script will make commits for you (you may want to commit your rubocop_todo.yml)
-4. Run the script (may take a while, when you want to continue working on your project meanwhile run this in a separate checkout):
-```
-rubocop-autofix
-```
+4. Run the script (may take a while, when you want to continue working on your project meanwhile run this in a separate checkout): `rubocop-autofix`
 5. Review all commits made by the script and run your tests. You can now drop certain commits of cops you don't want. Often it may make some sense to run the script again with changed settings, since rebasing 100+ commits is no fun.
 
 
