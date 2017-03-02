@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require 'yaml'
+
+rubocop_todo = '.rubocop_todo.yml'
+if File.exist?(rubocop_todo)
+  rubocop_yaml = YAML.load_file(rubocop_todo)
+  rubocop_yaml.keys.each do |key|
+    puts "Running autofix for #{key}"
+    `rubocop --only '#{key}' -a`
+    `git commit -am 'Run rubocop autofix for #{key}'`
+  end
+else
+  puts 'Please create a .rubocop_todo.yml with `rubocop --auto-gen-config` first.'
+end

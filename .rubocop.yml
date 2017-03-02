@@ -1,0 +1,102 @@
+AllCops:
+  Include:
+    - '**/Gemfile'
+    - '**/Rakefile'
+    - '**/config.ru'
+    - '**/Capfile'
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+
+Documentation:
+  Enabled: false
+
+Lint/UselessAccessModifier:
+  Enabled: true
+
+Metrics/LineLength:
+  Enabled: true
+  Max: 120
+
+Rails:
+  Enabled: true
+
+Rails/ActionFilter:
+  Enabled: true
+
+Rails/Date:
+  Enabled: true
+
+Rails/Delegate:
+  Enabled: true
+
+Rails/FindBy:
+  Enabled: true
+
+Rails/FindEach:
+  Enabled: true
+
+Rails/HasAndBelongsToMany:
+  Enabled: true
+
+Rails/Output:
+  Enabled: true
+
+Rails/PluralizationGrammar:
+  Enabled: true
+
+Rails/HttpPositionalArguments:
+  Enabled: true
+
+Rails/ReadWriteAttribute:
+  Enabled: true
+
+Rails/ScopeArgs:
+  Enabled: true
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/TimeZone:
+  Enabled: true
+
+Rails/Validation:
+  Enabled: true
+
+Style/AndOr:
+  Enabled: true
+
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
+Style/SpaceInsideBrackets:
+  Enabled: true
+  AutoCorrect: true
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: true
+
+Metrics/MethodLength:
+  Enabled: true
+
+Metrics/BlockLength:
+  Enabled: true
+  ExcludedMethods: ['describe', 'context', 'define', 'factory']
+
+Metrics/AbcSize:
+  Enabled: true
