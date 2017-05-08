@@ -1,7 +1,7 @@
 # coding: utf-8
 Gem::Specification.new do |spec|
   spec.name          = 'rubocop-bitcrowd'
-  spec.version       = '1.0.0'
+  spec.version       = '1.1.0'
   spec.authors       = ['bitcrowd']
   spec.email         = ['info@bitcrowd.net']
 
