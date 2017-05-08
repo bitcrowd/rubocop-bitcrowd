@@ -5,8 +5,6 @@ AllCops:
     - '**/config.ru'
     - '**/Capfile'
   Exclude:
-    - 'db/**/*'
-    - 'config/**/*'
     - 'script/**/*'
   DisplayCopNames: true
   DisplayStyleGuide: true
