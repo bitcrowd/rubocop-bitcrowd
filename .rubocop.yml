@@ -80,10 +80,6 @@ Style/CollectionMethods:
 Style/MethodCalledOnDoEndBlock:
   Enabled: true
 
-Style/SpaceInsideBrackets:
-  Enabled: true
-  AutoCorrect: true
-
 Style/FrozenStringLiteralComment:
   Enabled: false
 
@@ -99,3 +95,7 @@ Metrics/BlockLength:
 
 Metrics/AbcSize:
   Enabled: true
+
+Layout/SpaceInsideBrackets:
+  Enabled: true
+  AutoCorrect: true
