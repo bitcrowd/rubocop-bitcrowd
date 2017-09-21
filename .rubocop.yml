@@ -6,6 +6,7 @@ AllCops:
     - '**/Capfile'
   Exclude:
     - 'script/**/*'
+    - 'db/schema.rb'
   DisplayCopNames: true
   DisplayStyleGuide: true
 
