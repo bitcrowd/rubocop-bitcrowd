@@ -1,4 +1,3 @@
-# coding: utf-8
 Gem::Specification.new do |spec|
   spec.name          = 'rubocop-bitcrowd'
   spec.version       = '1.1.0'
