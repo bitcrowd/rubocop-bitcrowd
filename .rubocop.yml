@@ -72,7 +72,7 @@ Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
 
 Style/ClassAndModuleChildren:
-  EnforcedStyle: compact
+  EnforcedStyle: nested
 
 Style/CollectionMethods:
   Enabled: true
