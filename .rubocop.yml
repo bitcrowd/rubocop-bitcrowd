@@ -96,6 +96,10 @@ Metrics/BlockLength:
 Metrics/AbcSize:
   Enabled: true
 
-Layout/SpaceInsideBrackets:
+Layout/SpaceInsideArrayLiteralBrackets:
+  Enabled: true
+  AutoCorrect: true
+
+Layout/SpaceInsideReferenceBrackets:
   Enabled: true
   AutoCorrect: true
