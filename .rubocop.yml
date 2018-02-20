@@ -5,6 +5,8 @@ AllCops:
     - '**/config.ru'
     - '**/Capfile'
   Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/bundle/**/*'
     - 'script/**/*'
     - 'db/schema.rb'
   DisplayCopNames: true
