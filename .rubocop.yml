@@ -64,6 +64,13 @@ Rails/SkipsModelValidations:
 Rails/TimeZone:
   Enabled: true
 
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - staging
+    - production
+
 Rails/Validation:
   Enabled: true
 
