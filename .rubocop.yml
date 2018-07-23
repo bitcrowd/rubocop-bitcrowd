@@ -90,7 +90,7 @@ Style/MethodCalledOnDoEndBlock:
   Enabled: true
 
 Style/FrozenStringLiteralComment:
-  Enabled: false
+  EnforcedStyle: always
 
 Style/MutableConstant:
   Enabled: true
