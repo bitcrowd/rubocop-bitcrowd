@@ -1,4 +1,4 @@
-# Rubocop Bitcrowd Changelog
+# Rubocop-Bitcrowd Changelog
 
 Presented in reverse chronological order.
 
@@ -6,28 +6,28 @@ Presented in reverse chronological order.
 
 https://github.com/bitcrowd/rubocop-bitcrowd/compare/v1.2.1...HEAD
 
-* Put high-level summary here
+*Put high-level summary here before releasing a new version*
 
 ### Deprecations:
 
-* Put deprecations here
+* Put deprecations here (in a brief bullet point)
 
 ### Potentially breaking changes:
 
-* Put potentially breaking changes here
+* Put potentially breaking changes here (in a brief bullet point)
 
 ### New features:
 
 * added `staging` to the list of known environments
 * enforce frozen_string_literal comment
-* Put new features here
+* Put new features here (in a brief bullet point)
 
 ### Fixes:
 
-* between rubocop version 0.55 and 0.56 re stopped processing most files because we overwrote `AllCops/Include`.
+* between rubocop version 0.55 and 0.56 we stopped processing most files because we overwrote `AllCops/Include`.
   This is fixed, but requires a rubocop version of 0.56 or higher.
-* Put fixes here
 * we have a more detailed changelog which is conform with our changelog-style of other projects
+* Put fixes here (in a brief bullet point)
 
 ## `1.2.1` (2018-03-22)
 
