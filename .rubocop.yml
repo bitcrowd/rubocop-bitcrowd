@@ -4,6 +4,9 @@ AllCops:
     - 'vendor/bundle/**/*'
     - 'script/**/*'
     - 'db/schema.rb'
+    - 'tmp/**/*'
+    - 'storage/**/*'
+    - 'log/**/*'
   DisplayCopNames: true
   DisplayStyleGuide: true
 
