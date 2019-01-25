@@ -23,6 +23,9 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v1.3.0...HEAD
 ### Fixes:
 
 * Put fixes here (in a brief bullet point)
+* Also exclude the `tmp`, `log` and `storage` directories from being inspected.
+  Working on a Rails application, especially the `tmp` directory fills up over time and slows down linting the project enormously. Same goes for the `storage` directory: here rubocop also has to dig through deeply nested folder structures.  
+  Note: rubocop's "default" configuration also ignores the `tmp` directory.
 
 ## `1.3.0` (2018-10-22)
 
