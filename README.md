@@ -62,11 +62,8 @@ To release a new version, follow these steps:
 
 1. update the [CHANGELOG](./CHANGELOG.md) to reflect the new release and prepare a new [`master` section](./CHANGELOG.md#master)
 2. update the version in `rubocop-bitcrowd.gemspec` according to [semver](https://semver.org/)
-3. commit that change and tag it `git tag -as v1.2.3` (if releasing version 1.2.3). The tag-body should contain the corresponding CHANGELOG part of the current release.
-4. push the commit and tag to github: `git push --tags`
-5. build the gem and release it to rubygems:
-  * `gem build rubocop-bitcrowd.gemspec`
-  * `gem push rubocop-bitcrowd-1.2.3.gem`
+3. commit that change
+4. run `rake release`
 
 ## License
 
