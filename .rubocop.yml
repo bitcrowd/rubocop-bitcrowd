@@ -1,7 +1,5 @@
 AllCops:
   Exclude:
-    - 'node_modules/**/*'
-    - 'vendor/bundle/**/*'
     - 'script/**/*'
     - 'db/schema.rb'
     - 'tmp/**/*'
