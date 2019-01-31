@@ -22,6 +22,12 @@ To use the configuration in your project create a .rubocop.yml with:
 ```yml
 inherit_gem:
   rubocop-bitcrowd: .rubocop.yml
+
+# Note: skip this if you want to override the default AllCops:Include and AllCops:Exclude list
+inherit_mode:
+  merge:
+    - Include
+    - Exclude
 ```
 
 # Using rubocop-rspec
@@ -36,6 +42,12 @@ inherit_gem:
   rubocop-bitcrowd:
     - .rubocop.yml
     - .rubocop-rspec.yml
+
+# Note: skip this if you want to override the default AllCops:Include and AllCops:Exclude list
+inherit_mode:
+  merge:
+    - Include
+    - Exclude
 ```
 
 ## Autofixing issues
