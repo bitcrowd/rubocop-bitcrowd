@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage             = 'https://github.com/bitcrowd/rubocop-bitcrowd'
   spec.license              = 'MIT'
   spec.post_install_message = <<~HEREDOC
+
     PLEASE NOTE: as of version 0.57.0 rubocop allows merging its default
     AllCops:Include and AllCops:Exclude lists with user defined lists.
 
@@ -25,6 +26,7 @@ Gem::Specification.new do |spec|
 
     Cheers!
     Your friends at bitcrowd
+
   HEREDOC
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
