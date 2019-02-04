@@ -11,13 +11,11 @@ Gem::Specification.new do |spec|
   spec.license              = 'MIT'
   spec.post_install_message = <<~HEREDOC
 
-    PLEASE NOTE: as of version 0.57.0 rubocop allows merging its default
-    AllCops:Include and AllCops:Exclude lists with user defined lists.
+    This version of rubocop-bitcrowd no longer overrides RuboCop's AllCops:Exclude list.
+    It only adds extra patterns not included in the defaults.
 
-    Therefore rubocop-bitcrowd is no longer fully overriding AllCops:Exclude,
-    only adding some extra paths.
-
-    If want to keep excluding everthing as before, add this to your .rubocop.yml:
+    Therefore if you want to keep excluding both, the bitcrowd patterns as well as the RuboCop default ones,
+    add this to your .rubocop.yml
     inherit_mode:
       merge:
         - Exclude
