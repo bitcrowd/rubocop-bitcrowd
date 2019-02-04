@@ -8,7 +8,6 @@ AllCops:
     - 'tmp/**/*'
     - 'storage/**/*'
     - 'log/**/*'
-  DisplayCopNames: true
   DisplayStyleGuide: true
 
 Documentation:
