@@ -10,19 +10,19 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.0.0...HEAD
 
 ### Deprecations:
 
-* Put deprecations here (in a brief bullet point)
+* *Put deprecations here (in a brief bullet point)*
 
 ### Potentially breaking changes:
 
-* Put potentially breaking changes here (in a brief bullet point)
+* *Put potentially breaking changes here (in a brief bullet point)*
 
 ### New features:
 
-* Put new features here (in a brief bullet point)
+* *Put new features here (in a brief bullet point)*
 
 ### Fixes:
 
-* Put fixes here (in a brief bullet point)
+* *Put fixes here (in a brief bullet point)*
 
 ## 2.0.0
 
