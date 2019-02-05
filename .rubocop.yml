@@ -1,13 +1,13 @@
 AllCops:
+  # Additional exclude patterns for files that should not be analyzed.
+  # These extend the default RuboCop exclude patterns:
+  # https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml
   Exclude:
-    - 'node_modules/**/*'
-    - 'vendor/bundle/**/*'
     - 'script/**/*'
     - 'db/schema.rb'
     - 'tmp/**/*'
     - 'storage/**/*'
     - 'log/**/*'
-  DisplayCopNames: true
   DisplayStyleGuide: true
 
 Documentation:

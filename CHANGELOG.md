@@ -15,6 +15,16 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v1.3.0...HEAD
 ### Potentially breaking changes:
 
 * Put potentially breaking changes here (in a brief bullet point)
+* require a rubocop version >= 0.57.0
+* remove directories rubocop already excludes by default from the AllCops:Exclude list
+  * keeping the existing list now requires to add an `inherit_mode` section into their `.rubocop.yml`:
+
+    ```yml
+    # This will merge the default exclude list with the one from rubocop-bitcrowd
+    inherit_mode:
+      merge:
+        - Exclude
+    ```
 
 ### New features:
 
