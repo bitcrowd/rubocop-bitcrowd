@@ -4,19 +4,46 @@ Presented in reverse chronological order.
 
 ## master
 
-https://github.com/bitcrowd/rubocop-bitcrowd/compare/v1.3.0...HEAD
+https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.0.0...HEAD
 
 *Put high-level summary here before releasing a new version*
 
 ### Deprecations:
 
-* Put deprecations here (in a brief bullet point)
+* *Put deprecations here (in a brief bullet point)*
 
 ### Potentially breaking changes:
 
-* Put potentially breaking changes here (in a brief bullet point)
+* *Put potentially breaking changes here (in a brief bullet point)*
+
+### New features:
+
+* *Put new features here (in a brief bullet point)*
+
+### Fixes:
+
+* *Put fixes here (in a brief bullet point)*
+
+## 2.0.0
+
+https://github.com/bitcrowd/rubocop-bitcrowd/compare/v1.3.0...v2.0.0
+
+This release changes our approach on excluding certain file paths and directories from being inspected by the linter. Instead of fully overriding RuboCop's default `AllCops:Exclude` list (which used to be necessary up until `rubocop` v0.57.0), `rubocop-bitcrowd` now only provides some extra patterns as an extension to the default list.
+
+We in addition to the default directories, e.g. want to exclude `log`, `tmp` and `storage` in Rails projects.
+
+In order to keep excluding both, the bitcrowd patterns and the RuboCop's default ones, add this to your `.rubocop.yml` file:
+
+```yml
+inherit_mode:
+  merge:
+    - Exclude
+```
+
+### Potentially breaking changes:
+
 * require a rubocop version >= 0.57.0
-* remove directories rubocop already excludes by default from the AllCops:Exclude list
+* remove directories rubocop already excludes by default from the `AllCops:Exclude` list
   * keeping the existing list now requires to add an `inherit_mode` section into their `.rubocop.yml`:
 
     ```yml
@@ -26,13 +53,8 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v1.3.0...HEAD
         - Exclude
     ```
 
-### New features:
-
-* Put new features here (in a brief bullet point)
-
 ### Fixes:
 
-* Put fixes here (in a brief bullet point)
 * Also exclude the `tmp`, `log` and `storage` directories from being inspected.
   Working on a Rails application, especially the `tmp` directory fills up over time and slows down linting the project enormously. Same goes for the `storage` directory: here rubocop also has to dig through deeply nested folder structures.  
   Note: rubocop's "default" configuration also ignores the `tmp` directory.
