@@ -98,7 +98,7 @@ Metrics/MethodLength:
 
 Metrics/BlockLength:
   Enabled: true
-  ExcludedMethods: ['describe', 'context', 'define', 'factory']
+  ExcludedMethods: ['describe', 'context', 'define', 'factory', 'namespace']
 
 Metrics/AbcSize:
   Enabled: true
