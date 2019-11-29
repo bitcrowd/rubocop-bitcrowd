@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name                 = 'rubocop-bitcrowd'
-  spec.version              = '2.0.0'
+  spec.version              = '2.1.0'
   spec.authors              = ['bitcrowd']
   spec.email                = ['info@bitcrowd.net']
 
