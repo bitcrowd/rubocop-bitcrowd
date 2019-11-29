@@ -4,7 +4,7 @@ Presented in reverse chronological order.
 
 ## master
 
-https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.0.0...HEAD
+https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.0...HEAD
 
 *Put high-level summary here before releasing a new version*
 
@@ -19,13 +19,19 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.0.0...HEAD
 ### New features:
 
 * *Put new features here (in a brief bullet point)*
-* Exclude `namespace` method from `Metrics/BlockLength` to support longer namespace definitions in rake tasks.
 
 ### Fixes:
 
 * *Put fixes here (in a brief bullet point)*
 
-## 2.0.0
+## `2.1.0` (2019-11-29)
+
+https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.0.0...v2.1.0
+
+### New features:
+* Exclude `namespace` method from `Metrics/BlockLength` to support longer namespace definitions in rake tasks.
+
+## `2.0.0` (2019-02-06)
 
 https://github.com/bitcrowd/rubocop-bitcrowd/compare/v1.3.0...v2.0.0
 
