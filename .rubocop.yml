@@ -10,7 +10,7 @@ AllCops:
     - 'log/**/*'
   DisplayStyleGuide: true
 
-Documentation:
+Style/Documentation:
   Enabled: false
 
 Lint/UselessAccessModifier:

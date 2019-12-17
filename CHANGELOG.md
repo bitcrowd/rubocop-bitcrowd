@@ -24,6 +24,8 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.0...HEAD
 
 * *Put fixes here (in a brief bullet point)*
 
+* Add compartment to `Documentation` cop
+
 ## `2.1.0` (2019-11-29)
 
 https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.0.0...v2.1.0
