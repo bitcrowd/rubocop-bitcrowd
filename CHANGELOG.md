@@ -24,6 +24,14 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.0...HEAD
 
 * *Put fixes here (in a brief bullet point)*
 
+## `2.1.2` (2019-12-17)
+
+https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.1...v2.1.2
+
+### Fixes:
+
+* Remove rubocop version lock to 0.57.x
+
 ## `2.1.1` (2019-12-17)
 
 https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.0...v2.1.1
