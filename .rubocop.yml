@@ -16,10 +16,6 @@ Style/Documentation:
 Lint/UselessAccessModifier:
   Enabled: true
 
-Metrics/LineLength:
-  Enabled: true
-  Max: 120
-
 Rails:
   Enabled: true
 
@@ -102,6 +98,10 @@ Metrics/BlockLength:
 
 Metrics/AbcSize:
   Enabled: true
+
+Layout/LineLength:
+  Enabled: true
+  Max: 120
 
 Layout/SpaceInsideArrayLiteralBrackets:
   Enabled: true
