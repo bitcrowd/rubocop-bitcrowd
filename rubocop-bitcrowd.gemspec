@@ -30,10 +30,10 @@ Gem::Specification.new do |spec|
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  spec.bindir        = 'exe'
-  spec.executables   = 'rubocop-autofix'
+  spec.bindir      = 'exe'
+  spec.executables = 'rubocop-autofix'
 
-  spec.add_runtime_dependency 'rubocop', '~> 0.57'
+  spec.add_runtime_dependency 'rubocop', '~> 0.78.0'
 
   spec.add_development_dependency 'bundler', '~> 1.14'
   spec.add_development_dependency 'rake', '~> 10.0'
