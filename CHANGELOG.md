@@ -14,6 +14,7 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.0...HEAD
 
 ### Potentially breaking changes:
 
+* [#33](https://github.com/bitcrowd/rubocop-bitcrowd/pull/33) increase the max. number of lines we allow for "feature" specs.
 * *Put potentially breaking changes here (in a brief bullet point)*
 
 ### New features:

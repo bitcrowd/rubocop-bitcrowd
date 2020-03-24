@@ -12,7 +12,7 @@ RSpec/NestedGroups:
 RSpec/ExampleLength:
   Exclude:
     - 'spec/features/**/*'
-  Max: 7
+  Max: 20
 
 RSpec/BeEql:
   Enabled: false
