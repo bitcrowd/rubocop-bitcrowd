@@ -18,13 +18,14 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.0...HEAD
 
 ### New features:
 
+* [#32](https://github.com/bitcrowd/rubocop-bitcrowd/pull/32) add possibility to include [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance) cops.
 * *Put new features here (in a brief bullet point)*
 
 ### Fixes:
 
 * [#31](https://github.com/bitcrowd/rubocop-bitcrowd/pull/31) Fix deprecation warning by moving `LineLength` cop from `Metrics` to `Layout` and lock the Rubocop version to `>= 0.78.0` and `< 0.79`.
-* *Put fixes here (in a brief bullet point)*
 * [#31](https://github.com/bitcrowd/rubocop-bitcrowd/pull/31) Lock down the minimal `rubocop` version we depend on. Similar to [rubocop-rspec](https://github.com/rubocop-hq/rubocop-rspec) we're only setting the lower boundary now.
+* *Put fixes here (in a brief bullet point)*
 
 ## `2.1.2` (2019-12-17)
 
