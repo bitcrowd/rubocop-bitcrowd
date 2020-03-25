@@ -12,16 +12,28 @@ Gem::Specification.new do |spec|
 
   spec.post_install_message = <<~HEREDOC
 
-    This version of rubocop-bitcrowd no longer overrides RuboCop's AllCops:Exclude list.
-    It only adds extra patterns not included in the defaults.
+    Starting with this version of rubocop-bitcrowd, we are following RuboCop's
+    modularization into separate gems and splitting up our configuration into:
+    - .rubocop.yml
+    - .rubocop-rails.yml
+    - .rubocop-rspec.yml
+    - .rubocop-performance.yml
 
-    Therefore if you want to keep excluding both, the bitcrowd patterns as well as the RuboCop default ones,
-    add this to your .rubocop.yml
-    inherit_mode:
-      merge:
-        - Exclude
+    If you want to include the `rails`, `rspec` or `performance` cops, add the
+    respective gems to your Gemfile:
 
-    For more details: https://rubocop.readthedocs.io/en/latest/configuration/#merging-arrays-using-inherit_mode
+    gem 'rubocop-rails', require: false
+    gem 'rubocop-rspec', require: false
+    gem 'rubocop-performance', require: false
+
+    Add include the bitcrowd specific configuration in your .rubocop.yml
+
+    inherit_gem:
+      rubocop-bitcrowd:
+        - .rubocop.yml
+        - .rubocop-rspec.yml
+        - .rubocop-rails.yml
+        - .rubocop-performance.yml
 
     Cheers!
     Your friends at bitcrowd

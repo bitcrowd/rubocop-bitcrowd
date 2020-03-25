@@ -14,6 +14,7 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.3...HEAD
 
 ### Potentially breaking changes:
 
+* [#34](https://github.com/bitcrowd/rubocop-bitcrowd/pull/34) Extract `rails` cops into separate configuration based on [rubocop-rails](https://github.com/rubocop-hq/rubocop-rails), following the modularization of `rubocop` itself.
 * *Put potentially breaking changes here (in a brief bullet point)*
 
 ### New features:
