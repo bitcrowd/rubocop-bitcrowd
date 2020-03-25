@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
                               'settings we use at bitcrowd into your project'
   spec.homepage             = 'https://github.com/bitcrowd/rubocop-bitcrowd'
   spec.license              = 'MIT'
+
   spec.post_install_message = <<~HEREDOC
 
     This version of rubocop-bitcrowd no longer overrides RuboCop's AllCops:Exclude list.
@@ -30,10 +31,14 @@ Gem::Specification.new do |spec|
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  spec.bindir        = 'exe'
-  spec.executables   = 'rubocop-autofix'
+  spec.bindir      = 'exe'
+  spec.executables = 'rubocop-autofix'
 
-  spec.add_runtime_dependency 'rubocop', '~> 0.57'
+  spec.metadata = {
+    'changelog_uri' => 'https://github.com/bitcrowd/rubocop-bitcrowd/blob/master/CHANGELOG.md'
+  }
+
+  spec.add_runtime_dependency 'rubocop', '>= 0.78.0'
 
   spec.add_development_dependency 'bundler', '~> 1.14'
   spec.add_development_dependency 'rake', '~> 10.0'
