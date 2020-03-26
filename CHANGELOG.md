@@ -1,10 +1,10 @@
-# Rubocop-Bitcrowd Changelog
+# Changelog rubocop-bitcrowd
 
 Presented in reverse chronological order.
 
 ## master
 
-https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.0...HEAD
+https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.3...HEAD
 
 *Put high-level summary here before releasing a new version*
 
@@ -22,8 +22,17 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.0...HEAD
 
 ### Fixes:
 
-* [#31](https://github.com/bitcrowd/rubocop-bitcrowd/pull/31) Fix deprecation warning by moving `LineLength` cop from `Metrics` to `Layout` and lock the Rubocop version to `>= 0.78.0` and `< 0.79`.
 * *Put fixes here (in a brief bullet point)*
+
+## `2.1.3` (2020-03-26)
+
+https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.3...HEAD
+
+This releases silences some deprecation warnings and locks down the minimal `rubocop` version `rubocop-bitcrowd` depends on.
+
+### Fixes:
+
+* [#31](https://github.com/bitcrowd/rubocop-bitcrowd/pull/31) Fix deprecation warning by moving `LineLength` cop from `Metrics` to `Layout` and lock the Rubocop version to `>= 0.78.0` and `< 0.79`.
 * [#31](https://github.com/bitcrowd/rubocop-bitcrowd/pull/31) Lock down the minimal `rubocop` version we depend on. Similar to [rubocop-rspec](https://github.com/rubocop-hq/rubocop-rspec) we're only setting the lower boundary now.
 
 ## `2.1.2` (2019-12-17)
