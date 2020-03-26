@@ -18,6 +18,7 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.3...HEAD
 
 ### New features:
 
+* [#32](https://github.com/bitcrowd/rubocop-bitcrowd/pull/32) add possibility to include [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance) cops.
 * *Put new features here (in a brief bullet point)*
 
 ### Fixes:
