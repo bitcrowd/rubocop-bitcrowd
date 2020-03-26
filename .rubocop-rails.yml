@@ -1,0 +1,50 @@
+require: rubocop-rails
+
+Rails/ActionFilter:
+  Enabled: true
+
+Rails/Date:
+  Enabled: true
+
+Rails/Delegate:
+  Enabled: true
+
+Rails/FindBy:
+  Enabled: true
+
+Rails/FindEach:
+  Enabled: true
+
+Rails/HasAndBelongsToMany:
+  Enabled: true
+
+Rails/Output:
+  Enabled: true
+
+Rails/PluralizationGrammar:
+  Enabled: true
+
+Rails/HttpPositionalArguments:
+  Enabled: true
+
+Rails/ReadWriteAttribute:
+  Enabled: true
+
+Rails/ScopeArgs:
+  Enabled: true
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/TimeZone:
+  Enabled: true
+
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - staging
+    - production
+
+Rails/Validation:
+  Enabled: true

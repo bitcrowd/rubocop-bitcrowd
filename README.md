@@ -17,7 +17,7 @@ And then execute:
 
 ## Usage
 
-To use the configuration in your project create a .rubocop.yml with:
+To use the configuration in your project create a `.rubocop.yml` with:
 
 ```yml
 inherit_gem:
@@ -30,40 +30,29 @@ inherit_mode:
     - Exclude
 ```
 
-### Using rubocop-rspec
+### Using other rubocop gems
 
-There is also a config file for [rubocop-rspec](https://github.com/rubocop-hq/rubocop-rspec). To use it add rubocop-rspec to your Gemfile.
+There are also config files for the other `rubocop` gems:
+* [rubocop-rails](https://github.com/rubocop-hq/rubocop-rails)
+* [rubocop-rspec](https://github.com/rubocop-hq/rubocop-rspec)
+* [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance)
+
+To use any of them, add the respective gem to your Gemfile:
 
 ```ruby
+gem 'rubocop-rails', require: false
 gem 'rubocop-rspec', require: false
-```
-
-```yml
-inherit_gem:
-  rubocop-bitcrowd:
-    - .rubocop.yml
-    - .rubocop-rspec.yml
-
-# Note: skip this if you want to override the default AllCops:Include and AllCops:Exclude list
-inherit_mode:
-  merge:
-    - Include
-    - Exclude
-```
-
-### Using rubocop-performance
-
-There is also a config file for [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance). To use it add rubocop-performance to your Gemfile.
-
-```ruby
 gem 'rubocop-performance', require: false
 ```
 
+Then include the bitcrowd config in your `.rubocop.yml`:
+
 ```yml
 inherit_gem:
   rubocop-bitcrowd:
     - .rubocop.yml
     - .rubocop-rspec.yml
+    - .rubocop-rails.yml
     - .rubocop-performance.yml
 
 # Note: skip this if you want to override the default AllCops:Include and AllCops:Exclude list
