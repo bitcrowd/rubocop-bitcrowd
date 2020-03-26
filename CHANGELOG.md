@@ -4,7 +4,7 @@ Presented in reverse chronological order.
 
 ## master
 
-https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.3...HEAD
+https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.2.0...HEAD
 
 *Put high-level summary here before releasing a new version*
 
@@ -14,17 +14,63 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.1.3...HEAD
 
 ### Potentially breaking changes:
 
-* [#34](https://github.com/bitcrowd/rubocop-bitcrowd/pull/34) Extract `rails` cops into separate configuration based on [rubocop-rails](https://github.com/rubocop-hq/rubocop-rails), following the modularization of `rubocop` itself.
 * *Put potentially breaking changes here (in a brief bullet point)*
 
 ### New features:
 
-* [#32](https://github.com/bitcrowd/rubocop-bitcrowd/pull/32) add possibility to include [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance) cops.
 * *Put new features here (in a brief bullet point)*
 
 ### Fixes:
 
 * *Put fixes here (in a brief bullet point)*
+
+## `2.2.0` (2020-03-26)
+
+https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.2.0...HEAD
+
+With this version update, `rubocop-bitcrowd` adapts to RuboCop's new modularized architecture of having separate gems for different cop targets (Rails, Rspec, Performance).
+
+`rubocop-bitcrowd` includes separate configuration files for each RuboCop gem. To continue using the previous configuration including rules for Rspec and Rails, add the respective gems to your Gemfile:
+
+```ruby
+gem 'rubocop-rails', require: false
+gem 'rubocop-rspec', require: false
+```
+
+And update the configuration in your `.rubocop.yml` to include the bitcrowd rules:
+
+```yml
+inherit_gem:
+  rubocop-bitcrowd:
+    - .rubocop.yml
+    - .rubocop-rspec.yml
+    - .rubocop-rails.yml
+```
+
+As a new addition, `rubocop-bitcrowd` now also includes rules for the `rubocop-performance` gem. To use them, add the gem to your Gemfile:
+
+```ruby
+gem 'rubocop-performance', require: false
+```
+
+Then include the bitcrowd config in your `.rubocop.yml`:
+
+```yml
+inherit_gem:
+  rubocop-bitcrowd:
+    - .rubocop.yml
+    - .rubocop-rspec.yml
+    - .rubocop-rails.yml
+    - .rubocop-performance.yml
+```
+
+### Potentially breaking changes:
+
+* [#34](https://github.com/bitcrowd/rubocop-bitcrowd/pull/34) Extract `rails` cops into separate configuration based on [rubocop-rails](https://github.com/rubocop-hq/rubocop-rails), following the modularization of `rubocop` itself.
+
+### New features:
+
+* [#32](https://github.com/bitcrowd/rubocop-bitcrowd/pull/32) add possibility to include [rubocop-performance](https://github.com/rubocop-hq/rubocop-performance) cops.
 
 ## `2.1.3` (2020-03-26)
 
