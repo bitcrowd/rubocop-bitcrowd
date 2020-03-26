@@ -1,5 +1,7 @@
 # rubocop-bitcrowd 🚓
 
+[![Gem Version](https://badge.fury.io/rb/rubocop-bitcrowd.svg)](https://badge.fury.io/rb/rubocop-bitcrowd)
+
 The bitcrowd rubocop.yml as a gem.
 
 ## Installation
@@ -7,7 +9,6 @@ The bitcrowd rubocop.yml as a gem.
 Add this lines to your application's Gemfile:
 
 ```ruby
-gem 'rubocop', require: false
 gem 'rubocop-bitcrowd', require: false
 ```
 
