@@ -79,13 +79,13 @@ This gem provides a simple script, that can help you with this task:
 
 Any contributions are welcome. If you attempt to change the behavior of this gem it might be wise to open an issue first to discuss the change. Otherwise feel free to open a PR.
 
-Every PR should have a change in the [CHANGELOG](./CHANGELOG.md) file (within the [`master` section](./CHANGELOG.md#master)) briefly outlining the attempted changes.
+Every PR should have a change in the [CHANGELOG](./CHANGELOG.md) file (within the [`main` section](./CHANGELOG.md#main)) briefly outlining the attempted changes.
 
 ### Release a new version
 
 To release a new version, follow these steps:
 
-1. update the [CHANGELOG](./CHANGELOG.md) to reflect the new release and prepare a new [`master` section](./CHANGELOG.md#master)
+1. update the [CHANGELOG](./CHANGELOG.md) to reflect the new release and prepare a new [`main` section](./CHANGELOG.md#main)
 2. update the version in `rubocop-bitcrowd.gemspec` according to [semver](https://semver.org/)
 3. commit that change
 4. run `rake release`

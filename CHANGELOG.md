@@ -2,7 +2,7 @@
 
 Presented in reverse chronological order.
 
-## master
+## main
 
 https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.2.0...HEAD
 
