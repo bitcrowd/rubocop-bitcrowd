@@ -22,6 +22,8 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.2.0...HEAD
 
 ### Fixes:
 
+* [#42](https://github.com/bitcrowd/rubocop-bitcrowd/pull/42) Remove deprecation warnings due to `ExcludedMethods` in rubocop >= 1.5.0
+See rubocop/rubocop#9098 and https://github.com/rubocop/rubocop/blob/1e55b1aa5e4c5eaeccad5d61f08b7930ed6bc341/relnotes/v1.5.0.md
 * [#43](https://github.com/bitcrowd/rubocop-bitcrowd/pull/43) Update documentation mentioning the `master` branch, to use `main` instead
 
 ## `2.2.0` (2020-03-26)
