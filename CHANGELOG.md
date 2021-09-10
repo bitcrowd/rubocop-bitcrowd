@@ -22,7 +22,7 @@ https://github.com/bitcrowd/rubocop-bitcrowd/compare/v2.2.0...HEAD
 
 ### Fixes:
 
-* [#43](https://github.com/bitcrowd/rubocop-bitcrowd/pull/43) Update documentation mentionning the `master` branch to use `main` instead
+* [#43](https://github.com/bitcrowd/rubocop-bitcrowd/pull/43) Update documentation mentioning the `master` branch, to use `main` instead
 
 ## `2.2.0` (2020-03-26)
 
