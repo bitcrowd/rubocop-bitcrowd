@@ -50,7 +50,7 @@ Gem::Specification.new do |spec|
     'changelog_uri' => 'https://github.com/bitcrowd/rubocop-bitcrowd/blob/main/CHANGELOG.md'
   }
 
-  spec.add_runtime_dependency 'rubocop', '>= 0.78.0'
+  spec.add_runtime_dependency 'rubocop', '>= 1.5.0'
 
   spec.add_development_dependency 'bundler', '>= 2.1.0'
   spec.add_development_dependency 'rake', '~> 12.3.3'
